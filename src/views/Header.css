@@ -1,0 +1,150 @@
+.header {
+  background: #000000;
+  padding: 1rem;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.title-container {
+  text-align: left;
+}
+
+.title-container h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  font-weight: 600;
+  color: white;
+}
+
+.navigation {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.navigation button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.navigation button:hover {
+  color: #64ffda;
+}
+
+.subtitle {
+  font-size: 1rem;
+  margin: 0.3rem 0 0;
+  opacity: 0.9;
+  color: #e3f2fd;
+}
+
+.call-to-order {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.8rem 1.2rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.call-to-order:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.phone-icon {
+  font-size: 1.5rem;
+  margin-right: 0.8rem;
+  color: #64ffda;
+}
+
+.call-text {
+  text-align: left;
+}
+
+.call-text p {
+  margin: 0;
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+.phone-number {
+  font-size: 1rem !important;
+  font-weight: 600;
+  color: #64ffda;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .title-container {
+    text-align: center;
+  }
+
+  .navigation {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .title-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .call-to-order {
+    padding: 0.6rem 1rem;
+  }
+
+  .phone-icon {
+    font-size: 1.3rem;
+  }
+
+  .call-text p {
+    font-size: 0.75rem;
+  }
+
+  .phone-number {
+    font-size: 0.9rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 0.8rem;
+  }
+
+  .title-container h1 {
+    font-size: 1.3rem;
+  }
+
+  .subtitle {
+    font-size: 0.8rem;
+  }
+} 
